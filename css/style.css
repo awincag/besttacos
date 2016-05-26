@@ -152,6 +152,44 @@ html{
   background: #FFF;
 }
 
+.nav {
+  position: fixed;
+  top: 0;
+  left: 2em;
+  bottom: 0;
+  border-right: 1px solid #999;
+}
+
+.nav-center {
+  margin-right: -1.9em;
+}
+
+.nav li {
+  padding: .5em;
+  margin: .5em;
+  background-color: #fff;
+  border: .5em solid #fff;
+}
+
+.nav-jump {
+  display: block;
+  content: "";
+  border-radius: 100%;
+  width: .75em;
+  height: .75em;
+  border: 1px solid #999;
+  background-color: #fff;
+  padding: 0.25em;
+  transition: 0.2s ease-out;
+}
+
+
+li:hover .nav-jump, .nav-jump:active {
+  /* background-color: #111 !important; */
+  border: 1px solid #111;
+  /* background-color: #CC333F; */
+}
+
 .center {
   height: 100vh;
   padding: 1.5em;
@@ -275,7 +313,7 @@ html{
 }
 
 a:hover .jump {
-  padding-right: .5em;
+  padding-right: .25em;
 }
 
 a:hover .line {
