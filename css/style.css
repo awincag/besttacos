@@ -56,10 +56,10 @@ section {
 }
 
 h1,h2,h3,h4,h5,h6, .header{
-  font-family: BentonernModernDispLight, serif;
+  font-family: 'BentonernModernDispLight', serif;
   font-weight: 600;
   margin:0;
-  line-height: 1.5em;
+  line-height: 1.15em;
   color:inherit;
   display:inherit;
   text-rendering:optimizelegibility
@@ -218,12 +218,21 @@ html{
   text-align: right;
 }
 
+.t-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .white {
   color: #fff;
 }
 
-.tite {
-  flex: 1;
+.title {
+  justify-content: space-between;
+  min-height: 350px;
 }
 
 .padding {
@@ -232,4 +241,49 @@ html{
 
 .bg-red {
   background-color: #CC333F;
+}
+
+.action {
+  position: relative;
+}
+
+.jump {
+  font-family: "Benton Sans RE", sans-serif;;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  transition: 0.3s ease-out;
+}
+
+.line, .line:before, .line:after {
+  position: absolute;
+  content: "";
+  border-top: 1px solid #000;
+  top: 1em;
+  transition: 0.3s ease-out;
+}
+
+.line {
+  width: 6em;
+  right: 15em;
+}
+
+.line:before {
+  top:-1px;
+  right: -15em;
+  width: 0em;
+}
+
+a:hover .jump {
+  padding-right: .5em;
+}
+
+a:hover .line {
+  width: 0px;
+  right: 21em;
+}
+
+a:hover .line:before {
+  right: -5em;
+  width: 5em;
 }
