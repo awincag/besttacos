@@ -1,8 +1,24 @@
-@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
+.bentonmoderndisplaylight {
+  font-family: 'BentonernModernDispLight';
+  font-style: normal;
+  font-weight: normal;
+}
+
+.bentonsansre {
+  font-family: "Benton Sans RE";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.bentonsansrebold {
+  font-family: "Benton Sans RE";
+  font-style: normal;
+  font-weight: bold;
+}
+
 
 html{
-  font-family: 'Abril Fatface', cursive;
-  /* font-family:proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif; */
+  font-family: 'Benton Sans RE', Helvetica,Roboto,Arial,sans-serif; */
   color:#333;
   line-height:1.51;
 }
@@ -40,7 +56,7 @@ section {
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family: 'Abril Fatface', cursive;
+  font-family: BentonernModernDispLight, serif;
   font-weight: 600;
   margin:0;
   line-height: 1.5em;
