@@ -55,7 +55,7 @@ header {
 section {
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6, .header{
   font-family: BentonernModernDispLight, serif;
   font-weight: 600;
   margin:0;
@@ -149,7 +149,7 @@ html *{
   padding:0}
 
 html{
-  background: #AC9456;
+  background: #FFF;
 }
 
 .center {
@@ -176,19 +176,60 @@ html{
   background: url("../media/taco.png") center no-repeat;
 }
 
-.body {
+.header {
+  font-size: 6rem;
+}
+
+.full {
+  height: 100%;
+  width: 100%;
+}
+
+.flex {
   display: flex;
+}
+
+.f-c {
   flex-direction: column;
+}
+
+.f-vcenter {
   justify-content: center;
+}
+
+.f-hcenter {
   align-items: center;
   align-content: center;
+}
 
+.fc {
+
+}
+
+.f-r {
+  justify-content: flex-end;
 }
 
 .t-center {
   text-align: center;
 }
 
+.t-right {
+  text-align: right;
+}
+
 .white {
   color: #fff;
+}
+
+.tite {
+  flex: 1;
+}
+
+.padding {
+  padding:3em;
+}
+
+.bg-red {
+  background-color: #CC333F;
 }
