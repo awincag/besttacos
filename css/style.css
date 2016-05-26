@@ -56,7 +56,7 @@ section {
 }
 
 h1,h2,h3,h4,h5,h6, .header{
-  font-family: 'BentonernModernDispLight', serif;
+  font-family: BentonernModernDispLight, serif;
   font-weight: 600;
   margin:0;
   line-height: 1.15em;
@@ -177,7 +177,7 @@ html{
 }
 
 .header {
-  font-size: 6rem;
+  font-size: 7rem;
 }
 
 .full {
@@ -264,7 +264,7 @@ html{
 }
 
 .line {
-  width: 6em;
+  width: 5em;
   right: 15em;
 }
 
@@ -284,6 +284,6 @@ a:hover .line {
 }
 
 a:hover .line:before {
-  right: -5em;
-  width: 5em;
+  right: -4em;
+  width: 4em;
 }
