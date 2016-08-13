@@ -59,7 +59,7 @@ h1,h2,h3,h4,h5,h6, .header{
   font-family: 'BentonernModernDispLight', serif;
   font-weight: 100;
   margin:0;
-  line-height: 1.05em;
+  line-height: 0.95;
   color:inherit;
   display:inherit;
   text-rendering:optimizelegibility;
@@ -72,7 +72,7 @@ h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{
 }
 
 h1{
-  font-size: 6rem;
+  font-size: 5.5rem;
   letter-spacing: -3px; }
   @media only screen and (min-width: 700px) {
     h1 {
