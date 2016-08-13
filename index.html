@@ -25,41 +25,58 @@
         // Picture element HTML5 shiv
         document.createElement( "picture" );
         </script>
-      <script src="js/picturefill.js" async></script>
+      <script src="js/lazysizes.min.js"></script>
+      <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <div class="content">
-      <div class="nav flex f-hcenter">
-        <div class="nav-center">
-          <li><span class="nav-jump"></span></li>
-          <li><span class="nav-jump"></span></li>
-          <li><span class="nav-jump"></span></li>
+      <div class="title">
+        <h1>The World's Best Breakfast Tacos</h1>
+      </div>
+      <div class="intro--box">
+        <div class="intro--box-content">
+          <div class="taco--icon">
+            <picture>
+              <source
+                data-srcset="assets/taco-icon.png"
+                media="(min-width: 100px)" />
+              <img
+                data-sizes="auto"
+                src="assets/taco-icon.png"
+                data-src="assets/taco-icon.png"
+                class="lazyload blur-up" />
+            </picture>
+          </div>
+          <div class="subhead">
+            <span>Coming Soon</span>
+          </div>
         </div>
       </div>
-      <div class="main-content">
-        <section id="taco">
-          <div class="t-page bg-taco"></div>
-        </section>
-
-        <section id="intro" class="center">
-          <div class="full flex f-c f-vcenter padding">
-            <div class="title f-c flex">
-              <div class="intro">
-                <span class="f-r header t-right">The World's Best</span>
-                <span class="f-r header t-right">Breakfast Tacos</span>
-              </div>
-              <div class="flex f-r">
-                <a href="#about" class="action">
-                  <span class="f-r jump">Taste Decadance</span>
-                  <div class="line"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="full flex bg-red">
-          </div>
-        </section>
+      <div class="taco--overlay"></div>
+      <div class="photo-width">
+        <picture>
+            <source
+              data-srcset="assets/taco-xl.jpg"
+              media="(min-width: 1500px)" />
+            <source
+              data-srcset="assets/taco-l.jpg"
+              media="(min-width: 1200px)" />
+            <source
+              data-srcset="assets/taco-m.jpg"
+              media="(min-width: 1000px)" />
+            <source
+              data-srcset="assets/taco-s.jpg"
+              media="(min-width: 700px)" />
+            <source
+              data-srcset="assets/taco-phone.jpg"
+              media="(min-width: 100px)" />
+            <img
+              data-sizes="auto"
+              src="assets/taco-placeholder.jpg"
+              data-src="assets/taco-l.jpg"
+              class="bg lazyload blur-up" />
+        </picture>
       </div>
-
+    </div>
   </body>
 </html>
