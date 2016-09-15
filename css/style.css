@@ -107,18 +107,22 @@ h1, h2 {
 
 
 h3{
-  font-size:2.2em
+  font-size:2.2rem
 }
 
 h3 {
   font-family: 'Benton Sans RE', Helvetica,Roboto,Arial,sans-serif;
   font-weight: bold;
-  font-size: 16pt;
+  font-size: 1rem
   line-height: 2.56em;
   letter-spacing: 0.12rem;
   color: #d2d2d2;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
+  @media only screen and (min-width: 1200px) {
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
 
 h4{
   font-size:1.8em
@@ -294,22 +298,21 @@ html{
 .subtitle {
   position: absolute;
   left: 2em;
-  top: 4em; }
+  top: 4.5em; }
   @media only screen and (min-width: 700px) {
     .subtitle {
       left: 5em;
-      top: 7.5em;
+      top: 8.5em;
       }
    }
    @media only screen and (min-width: 1000px) {
     .subtitle {
-      top: 8em;
+      top: 9em;
     }
   }
   @media only screen and (min-width: 1500px) {
     .subtitle {
       left: 12em;
-      top: 8.75em;
     }
 }
 
