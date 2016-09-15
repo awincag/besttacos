@@ -4,6 +4,12 @@
   font-weight: normal;
 }
 
+.bentonmoderndisplaylight {
+  font-family: 'BentonernModernDispLight';
+  font-style: normal;
+  font-weight: normal;
+}
+
 .bentonsansre {
   font-family: "Benton Sans RE";
   font-style: normal;
@@ -18,13 +24,13 @@
 
 
 html{
-  font-family: 'Benton Sans RE', Helvetica,Roboto,Arial,sans-serif; */
+  font-family: 'Benton Sans RE', Helvetica,Roboto,Arial,sans-serif;
   color:#333;
   line-height:1.51;
 }
 
 p{
-  font-family: helvetica, sans-serif;
+  font-family: 'Benton Sans RE', Helvetica,Roboto,Arial,sans-serif;
   font-weight: 300;
   font-size: 16pt;
   line-height: 2.56em;
@@ -55,8 +61,8 @@ header {
 section {
 }
 
-h1,h2,h3,h4,h5,h6, .header{
-  font-family: 'BentonernModernDispLight', serif;
+h1,h2,h4,h5,h6, .header{
+  font-family: 'f37bellastencilregular', serif;
   font-weight: 100;
   margin:0;
   line-height: 0.95;
@@ -71,36 +77,47 @@ h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{
   color:#7b7b7b;
 }
 
-h1{
-  font-size: 5.5rem;
-  letter-spacing: -3px; }
+h1, h2 {
+  font-size: 5rem;
+  letter-spacing: -3px;
+  padding: 0 .1em 0 .3em; }
   @media only screen and (min-width: 700px) {
-    h1 {
+    h1, h2 {
       font-size: 8.4375rem;
+      padding: 0 .1em 0 .5em;
     }
   }
   @media only screen and (min-width: 1000px) {
-    h1 {
+    h1, h2{
       font-size: 9.6875rem;
     }
   }
   @media only screen and (min-width: 1200px) {
-    h1 {
+    h1, h2 {
       font-size: 10.625rem;
     }
   }
   @media only screen and (min-width: 1500px) {
-    h1 {
+    h1, h2{
       font-size: 11.875rem;
+      padding: 0 .1em 0 1em;
     }
   }
 
-h2{
-  font-size:3.1em
-}
+
 
 h3{
   font-size:2.2em
+}
+
+h3 {
+  font-family: 'Benton Sans RE', Helvetica,Roboto,Arial,sans-serif;
+  font-weight: bold;
+  font-size: 16pt;
+  line-height: 2.56em;
+  letter-spacing: 0.12rem;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 h4{
@@ -227,44 +244,93 @@ html{
 
 .bg.blur-up.lazyloaded {
     opacity: 1;
-    -webkit-filter: blur(25px);
-    filter: blur(25px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
 }
 
-.title {
+.title, .titlenext {
   position: absolute;
-  left: 2em;
-  right: 2em;
-  top: 2em; }
+  left: 0;
+  background-color: #ffffff; }
+  .title {
+    top: 7em;
+  }
+  .titlenext {
+    top: 12.5em;
+  }
   @media only screen and (min-width: 700px) {
     .title {
-      top: 4em;
-      left: 4em;
-      right: 4em;
+      top: 11em;
+    }
+    .titlenext {
+      top: 19.5em;
     }
   }
   @media only screen and (min-width: 1000px) {
     .title {
-      top: 8em;
-      left: 5em;
-      right: 5em;
+      top: 11.5em;
+    }
+    .titlenext {
+      top: 21.5em;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .title {
+      top: 11.5em;
+    }
+    .titlenext {
+      top: 22.5em;
     }
   }
   @media only screen and (min-width: 1500px) {
     .title {
       top: 12em;
-      left: 6em;
-      right: 5em;
     }
-  }
-  @media only screen and (min-width: 1500px) {
-    .title {
-      left: 7em;
+    .titlenext {
+      top: 24em;
     }
   }
 
-.title, .subhead {
+.subtitle {
+  position: absolute;
+  left: 2em;
+  top: 4em; }
+  @media only screen and (min-width: 700px) {
+    .subtitle {
+      left: 5em;
+      top: 7.5em;
+      }
+   }
+   @media only screen and (min-width: 1000px) {
+    .subtitle {
+      top: 8em;
+    }
+  }
+  @media only screen and (min-width: 1500px) {
+    .subtitle {
+      left: 12em;
+      top: 8.75em;
+    }
+}
+
+.title, .subtitle, .titlenext, .coming {
   z-index: 50;
+}
+
+.coming {
+  position: absolute;
+  bottom: 2em;
+  right: 2em; }
+  @media only screen and (min-width: 1000px) {
+   .coming {
+     bottom: 4em;
+     right: 5em;
+   }
+ }
+ @media only screen and (min-width: 1500px) {
+   .coming {
+     right: 6em;
+   }
 }
 
 .intro--box {
@@ -287,8 +353,8 @@ html{
 
 .taco--overlay {
   z-index: 2;
-  background-color: #ffffff;
-  opacity: .7;
+  background-color: #000000;
+  opacity: .85;
 }
 
 .photo-width {
@@ -319,99 +385,6 @@ html{
   bottom: 0;
 }
 
-.intro--box {
-  position: absolute;
-  top: 1em;
-  left: 1em;
-  right: 1em;
-  bottom: 1em;
-  overflow: hidden; }
-  @media only screen and (min-width: 700px) {
-    .intro--box {
-      top: 2em;
-      left: 2em;
-      right: 2em;
-      bottom: 2em;
-    }
-  }
-  @media only screen and (min-width: 1000px) {
-    .intro--box {
-      top: 3em;
-      right: 3em;
-      left: auto;
-      bottom: auto;
-      height: 650px;
-      width: 650px;
-    }
-  }
-  @media only screen and (min-width: 1200px) {
-    .intro--box {
-      top: 4em;
-      right: 4em;
-      left: auto;
-      bottom: auto;
-      height: 750px;
-      width: 850px;
-    }
-  }
-  @media only screen and (min-width: 1500px) {
-    .intro--box {
-      top: 5em;
-      right: 5em;
-    }
-  }
-
-.intro--box-content {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-.intro--box-content {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.subhead {
-  position:absolute;
-  bottom: 1em;
-  left: 1em;
-}
-
-.subhead {
-  font-family: "Benton Sans RE", sans-serif;;
-  font-weight: normal;
-  text-transform: uppercase;
-  font-size: .936rem;
-  color: #ffffff; }
-  @media only screen and (min-width: 700px) {
-    .subhead {
-      font-size: 1.25rem;
-    }
-  }
-  @media only screen and (min-width: 1000px) {
-    .subhead {
-      font-size: 1.5625rem;
-    }
-  }
-
-
-
-
-.intro--box {
-  background-color: #CC333F;
-  box-shadow: 15px 15px 60px 0px rgba(0,0,0,0.36);
-}
 
 .photo-width img {
   min-width: 100%;
@@ -429,4 +402,9 @@ html{
 
 picture {
   vertical-align: top;
+}
+@media only screen and (min-width: 1500px) {
+  picture {
+    width: 100%;
+  }
 }
